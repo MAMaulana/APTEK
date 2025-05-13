@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth overscroll-none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phantom-style WebGIS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External Libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .swiper-pagination-bullet {
+        background-color: #a3a3a3;
+        opacity: 1;
+        margin: 0 6px;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #6366f1;
+      }
+      .nav-link.active {
+        color: #6366f1;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+      <body class="bg-[#f4f0fb] text-white min-h-screen font-sans overflow-y-scroll overscroll-none">
+        <div id="page-wrapper">
+          <!-- Navbar -->
+        <nav class="w-full px-8 py-4 flex items-center justify-between bg-[#f4f0fb] text-[#392e5c] shadow-sm sticky top-0 z-50 backdrop-blur-lg bg-opacity-50">
+        <div class="flex items-center gap-3">
+          <img src="ITS.png" alt="ITS Logo" class="h-6" />
+          <span class="text-lg font-bold">WebGIS</span>
+        </div>
+        <ul class="flex gap-10 text-sm font-semibold">
+          <li><a href="#home" class="nav-link hover:opacity-80 transition">Home</a></li>
+          <li><a href="#aboutus" class="nav-link hover:opacity-80 transition">About Us</a></li>
+          <li><a href="#projects" class="nav-link hover:opacity-80 transition">Projects</a></li>
+        </ul>
+        <div class="w-16"></div>
+      </nav>
+      <!-- Hero Section -->
+      <section id="home" class="min-h-[90vh] flex flex-col items-center justify-start text-center px-4 pt-32 md:pt-24 lg:pt-32 scroll-pt-[6rem]" data-aos="fade-up">
+        <p class="text-lg mb-4 text-[#392e5c]">The crypto wallet that’ll take you places</p>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight text-[#392e5c]">
+          <span>Your</span> <span>trusted</span><br />
+          <span class="block mt-2">companion</span>
+        </h1>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="aboutus" class="bg-[#f4f0fb] pt-12 md:pt-16 pb-8 px-4 scroll-mt-24" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="text-3xl font-bold text-[#392e5c] text-center mb-12">Our Team</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Team Cards -->
+          <div class="bg-[#e6ddfb] rounded-3xl p-6 text-center shadow-lg">
+            <img src="advan.jpg" alt="Advan" class="w-full h-40 object-cover rounded-xl mb-4" />
+            <h3 class="text-xl font-bold text-[#392e5c]">Advan</h3>
+            <p class="text-[#5b5276] text-sm">5015221077</p>
+          </div>
+          <div class="bg-[#def6f4] rounded-3xl p-6 text-center shadow-lg">
+            <img src="raihan.jpg" alt="Raihan" class="w-full h-40 object-cover rounded-xl mb-4" />
+            <h3 class="text-xl font-bold text-[#392e5c]">Raihan</h3>
+            <p class="text-[#5b5276] text-sm">5015221056</p>
+          </div>
+          <div class="bg-[#fff3c7] rounded-3xl p-6 text-center shadow-lg">
+            <img src="galih.jpg" alt="Galih" class="w-full h-40 object-cover rounded-xl mb-4" />
+            <h3 class="text-xl font-bold text-[#392e5c]">Galih</h3>
+            <p class="text-[#5b5276] text-sm">5015221072</p>
+          </div>
+          <div class="bg-[#5d1a77] rounded-3xl p-6 text-center shadow-lg">
+            <img src="akbar.jpg" alt="Akbar" class="w-full h-40 object-cover rounded-xl mb-4" />
+            <h3 class="text-xl font-bold text-white">Akbar</h3>
+            <p class="text-[#c5b4e3] text-sm">5015221088</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="bg-[#f4f0fb] py-16 px-4 mt-16 md:mt-24 scroll-pt-[6rem]" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="text-3xl font-bold text-[#392e5c] text-center mb-12">Our Projects</h2>
+        <div class="max-w-6xl mx-auto relative">
+          <!-- Custom Navigation -->
+          <div class="absolute -top-8 right-0 flex items-center gap-2 bg-white rounded-full px-2 py-1 shadow-md z-20">
+            <div id="custom-prev-2" class="w-8 h-8 rounded-full flex items-center justify-center text-gray-500 hover:bg-gray-100 cursor-pointer transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </div>
+            <div id="custom-next-2" class="w-8 h-8 rounded-full flex items-center justify-center bg-indigo-100 text-gray-800 hover:bg-indigo-200 cursor-pointer transition">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper mySwiper2 pt-10">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide bg-[#c2fff1] rounded-3xl p-6 text-left shadow-md text-[#1e1e1e] transition hover:shadow-xl cursor-pointer" onclick="navigateWithFade('real-time map.html')">
+                <h3 class="text-xl font-bold mb-1">Real-Time Map Viewer</h3>
+                <p class="text-sm">Displays current spatial data across cities.</p>
+              </div>
+              <div class="swiper-slide bg-[#fde1f4] rounded-3xl p-6 text-left shadow-md text-[#1e1e1e] cursor-pointer transition hover:shadow-xl" onclick="navigateWithFade('Disaster Alert System.html')">
+                <h3 class="text-xl font-bold mb-1">Disaster Alert System</h3>
+                <p class="text-sm">Monitors and alerts based on geospatial hazards.</p>
+              </div>
+              <div class="swiper-slide bg-[#e2ebff] rounded-3xl p-6 text-left shadow-md text-[#1e1e1e] cursor-pointer transition hover:shadow-xl" onclick="navigateWithFade('traffic flow simmulator.html')">
+                <h3 class="text-xl font-bold mb-1">Traffic Flow Simulator</h3>
+                <p class="text-sm">Simulates traffic congestion using real-time data.</p>
+              </div>
+            </div>
+            <div class="swiper-pagination mt-6 !static flex justify-center z-10"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+
+      new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        loop: false,
+        centeredSlides: false,
+        navigation: {
+          nextEl: "#custom-next-2",
+          prevEl: "#custom-prev-2",
+        },
+        pagination: {
+          el: ".mySwiper2 .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 2 },
+        },
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.documentElement.style.overscrollBehavior = "none";
+        document.body.style.overscrollBehavior = "none";
+
+        const sections = document.querySelectorAll("section[id]");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                  link.classList.remove("active");
+                  if (link.dataset.link === entry.target.id) {
+                    link.classList.add("active");
+                  }
+                });
+              }
+            });
+          },
+          { threshold: 0.6 }
+        );
+
+        sections.forEach(section => observer.observe(section));
+      });
+
+      function navigateWithFade(url) {
+        const wrapper = document.getElementById("page-wrapper");
+        wrapper.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = url;
+        }, 400);
+      }
+    </script>
+  </body>
+  <script src="main.js"></script>
+</html>

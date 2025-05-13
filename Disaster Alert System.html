@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Real-Time Map Viewer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-[#f4f0fb] text-[#392e5c] font-sans min-h-screen">
+
+  <!-- === NAVBAR === -->
+  <nav class="w-full px-8 py-4 flex items-center justify-between bg-[#f4f0fb] text-[#392e5c] shadow-sm sticky top-0 z-50 backdrop-blur-lg bg-opacity-50">
+    <div class="flex items-center gap-3">
+      <img src="ITS.png" alt="ITS Logo" class="h-6" />
+      <span class="text-lg font-bold">WebGIS</span>
+    </div>
+    <ul class="flex gap-10 text-sm font-semibold">
+      <li><a href="index.html#home" class="hover:opacity-80 transition">Home</a></li>
+      <li><a href="index.html#about" class="hover:opacity-80 transition">About Us</a></li>
+      <li><a href="index.html#projects" class="hover:opacity-80 transition">Projects</a></li>
+    </ul>
+    <div class="w-16"></div>
+  </nav>
+
+  <!-- === PROJECT CONTENT === -->
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-6">Real-Time Map Viewer</h1>
+    <p class="mb-6 leading-relaxed">
+      This tool allows you to view live spatial data across different cities. It integrates with XYZ API and supports multi-layer visualization. Here's how it works:
+    </p>
+
+    <ul class="list-disc pl-6 space-y-2 mb-6">
+      <li>Live GeoJSON feed from national data centers</li>
+      <li>Interactive zoom and layer toggles</li>
+      <li>Responsive UI for mobile and desktop</li>
+    </ul>
+
+    <a href="index.html#projects" class="inline-block text-indigo-600 hover:underline">← Back to Projects</a>
+  </main>
+
+</body>
+</html>
